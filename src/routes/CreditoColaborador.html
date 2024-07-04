@@ -1,0 +1,23 @@
+<form action="#" class="consultar-credito-colaborador">
+	<fieldset>
+		<label for="usuario">Número do CPF</label>
+		<input type="text" placeholder="" />
+	</fieldset>
+	<fieldset>
+		<label for="senha">Número do CPF</label>
+		<input type="password" placeholder="" />
+		<button name="toggle-peek-password">dasdsadas</button>
+	</fieldset>
+	<script>
+		let togglePasswordPeek = () => document.querySelector('button[name="toggle-peek-password"]')
+		console.log(togglePasswordPeek())
+		togglePasswordPeek()?.addEventListener("click", function (e) {
+			console.log(`opasdksadksak`)
+			e.preventDefault()
+			const passwordInput = document.querySelector('input[type="password"]')
+			if (passwordInput.type == "password") passwordInput.type = "text"
+			else passwordInput.type = "password"
+		})
+		function mostrarSenha() {}
+	</script>
+</form>

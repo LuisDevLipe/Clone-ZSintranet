@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZS - Intranet</title>
-    <link rel="stylesheet" href="root.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <script src="script.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ZS - Intranet</title>
+		<link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="root.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<nav id="fixed-navbar">
+			<span>
+				<button id="menu-toggle">
+					<span><img class="menu-icon closed" src="./assets/icons/seta-menu.svg" alt="" /></span> Sistemas
+				</button>
+			</span>
+			<span class="logo-wrapper">
+				<a id="link-inicio-navbar" href="index.html"></a>
+			</span>
+			<span>
+				<form action="#" name="login-form" id="login-form">
+					<div>
+						<fieldset>
+							<!-- <label hidden for="usuario">Usuario</label> -->
+							<input type="text" name="usuario" id="usuario" placeholder="Usuario" />
+						</fieldset>
+						<fieldset>
+							<!-- <label hidden for="senha">Senha</label> -->
+							<input type="text" name="senha" id="senha" placeholder="Senha" />
+						</fieldset>
+					</div>
+
+					<input type="submit" name="entrar" value="" />
+				</form>
+			</span>
+		</nav>
+		<main id="main" class="index">
+			<section name="metrics"></section>
+			<section name="content">
+				<h1>Conteudo</h1>
+			</section>
+			<section name="news"></section>
+		</main>
+		<ul id="menu" class="closed">
+			<li ajax-link="./routes/CreditoColaborador.html">Crédito Colaborador</li>
+			<li>Pagamentos</li>
+			<li>Operações Loja</li>
+		</ul>
+
+		<script src="script.js"></script>
+	</body>
 </html>
